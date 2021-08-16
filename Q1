@@ -1,0 +1,18 @@
+Question-1
+Sales by Match
+
+
+
+
+
+def sockMerchant(n, ar):
+    count1 = 0
+    final={}
+    for i in ar:
+        if i in final:
+            final[i]+=1
+        else:
+            final[i]=1
+    for x in final:
+        count1+=final[x]//2
+    return print(count1)
